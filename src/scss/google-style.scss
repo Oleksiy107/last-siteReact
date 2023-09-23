@@ -1,0 +1,21 @@
+.contact-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2vw;
+  gap: 5vw;
+}
+.contact-block__time-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.time-info__time {
+  font-size: 2vw;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}/*# sourceMappingURL=google-style.css.map */

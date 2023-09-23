@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+
+.container-header {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2vw;
+}
+.container-header__img {
+  position: relative;
+  width: 100%;
+}
+.container-header a {
+  color: #fff;
+}
+.container-header__box-link {
+  display: flex;
+  gap: 3vw;
+  padding: 2vw 4vw;
+  position: absolute;
+}
+.container-header__link:hover {
+  padding: 0.4vw;
+  opacity: 0.8;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}/*# sourceMappingURL=header.css.map */
