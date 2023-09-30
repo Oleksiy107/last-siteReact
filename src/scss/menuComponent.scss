@@ -1,28 +1,93 @@
-// menuComponent.scss
+@mixin widthCenter {
+  margin: auto;
+  width: 60%;
+}
+@mixin lineWord {
+  &::before,
+  &:after {
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 14%;
+  }
+  &::before {
+    right: 0.5em;
+  }
+}
 
-// Variables
-$primary-color: #3498db;
-$secondary-color: #e74c3c;
+.menu-box {
+  margin: auto;
+  width: 70%;
 
-// Styles
-.menu {
-  background-color: $primary-color;
-  padding: 20px;
+  &__title {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-size: 2vw;
+    width: 10vw;
 
-  &__item {
-    color: #fff;
-    margin: 10px;
+    &:after {
+      content: "";
+      flex: 1 1;
+      border-bottom: 0.2vw solid;
+      margin: auto;
+    }
 
-    &:hover {
-      color: $secondary-color;
+    &:after {
+      margin-left: 10px;
     }
   }
-
-  &__button {
-    background-color: $secondary-color;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
+  &__inner-box {
+    @include widthCenter();
+    flex-direction: column;
+    display: flex;
+    gap: 6vw;
+    align-items: center;
+  }
+  &__img-box {
+    display: flex;
+    gap: 2vw;
+    @include widthCenter();
+  }
+  &__btn {
+    padding: 0.5vw 2vw;
+  }
+  &__btn-wrapper {
+    display: flex;
+    gap: 2vw;
+    padding: 2vw;
+    justify-content: center;
+  }
+}
+.img-box {
+  &__name-pages {
+    display: flex;
+    font-size: 1.3vw;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    @include lineWord();
+  }
+}
+@media screen and (max-width: 425px) {
+  .menu-box {
+    width: 100%;
+    &__title {
+      display: none;
+    }
+    &__inner-box {
+      flex-direction: column;
+    }
+    &__img-box {
+      flex-direction: column;
+    }
+  }
+  .img-box {
+    &__photo {
+      width: 60vw;
+    }
   }
 }

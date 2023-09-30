@@ -1,6 +1,6 @@
 .footer-box {
   padding: 2vw;
-  background-color: #000;
+  background-color: #333333;
   justify-content: space-around;
   display: flex;
   align-items: center;
@@ -24,7 +24,7 @@
 }
 .footer-box__number-box > a:hover {
   -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
 }
 .footer-box__img1 {
   width: 2vw;
@@ -37,4 +37,4 @@
 }
 .footer-box__img4 {
   width: 2.5vw;
-}/*# sourceMappingURL=footer.css.map */
+} /*# sourceMappingURL=footer.css.map */

@@ -1,0 +1,60 @@
+@mixin forPhone {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+@mixin styleInput {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.order-form {
+  display: flex;
+  gap: 10vw;
+  align-items: center;
+  justify-content: center;
+  &__email-input {
+    @include styleInput();
+  }
+  &__tel-input {
+    @include styleInput();
+  }
+}
+@media screen and (max-width: 425px) {
+  .order-form {
+    align-items: center;
+    flex-direction: column;
+    &__form {
+      width: 300px;
+    }
+  }
+  .date-block {
+    &__wrapper1 {
+      @include forPhone();
+    }
+    &__wrapper2 {
+      @include forPhone();
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .order-form {
+    flex-direction: column;
+    align-items: center;
+    &__form {
+      width: 300px;
+    }
+  }
+  .date-block {
+    &__wrapper1 {
+      display: flex;
+      gap: 2vw;
+    }
+    &__wrapper2 {
+      display: flex;
+      gap: 2vw;
+    }
+  }
+}

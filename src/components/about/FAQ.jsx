@@ -1,36 +1,60 @@
-import React from "react";
+// import React from "react";
 
-export default () => {
-  let answers = document.querySelectorAll(".accordion");
-  answers.forEach((event) => {
-    event.addEventListener("click", () => {
-      if (event.classList.contains("active")) {
-        event.classList.remove("active");
-      } else {
-        event.classList.add("active");
-      }
-    });
-  });
-  return (
-    <div className="layout">
-      <div className="accordion">
-        <div className="accordion__question">
-          <p>чи можу я зробить замовлення</p>
-        </div>
-        <div className="accordion__answer">
-          <p>в данний момент доставки лише самовивоз та Glovo.</p>
-        </div>
-      </div>
-
-      <div className="accordion">
-        <div className="accordion__question">
-          <p>Чи можу я оплатить онлайн</p>
-        </div>
-
-        <div className="accordion__answer">
-          <p>Оплатить онлайн і також приймаємо любі карти</p>
-        </div>
-      </div>
-    </div>
-  );
-};
+// export default () => {
+//   return (
+//     <div className="container">
+//       <div className="container__wrapper">
+//         <p>
+//           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error quod
+//           pariatur facere quisquam voluptates tempore, dignissimos commodi!
+//           Voluptates architecto corporis nostrum laudantium. Voluptatum
+//           inventore quasi porro possimus necessitatibus assumenda deleniti.
+//         </p>
+//         <button className="toggle">
+//           whta is the return
+//           <FontAwesomeIcon icon="fas fa-plus" />
+//         </button>
+//         <p>
+//           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error quod
+//           pariatur facere quisquam voluptates tempore, dignissimos commodi!
+//           Voluptates architecto corporis nostrum laudantium. Voluptatum
+//           inventore quasi porro possimus necessitatibus assumenda deleniti.
+//         </p>
+//         <button className="toggle">
+//           whta is the return
+//           <FontAwesomeIcon icon="fas fa-plus" />
+//         </button>
+//         <p>
+//           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error quod
+//           pariatur facere quisquam voluptates tempore, dignissimos commodi!
+//           Voluptates architecto corporis nostrum laudantium. Voluptatum
+//           inventore quasi porro possimus necessitatibus assumenda deleniti.
+//         </p>
+//         <button className="toggle">
+//           whta is the return
+//           <FontAwesomeIcon icon="fas fa-plus" />
+//         </button>
+//         <p>
+//           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error quod
+//           pariatur facere quisquam voluptates tempore, dignissimos commodi!
+//           Voluptates architecto corporis nostrum laudantium. Voluptatum
+//           inventore quasi porro possimus necessitatibus assumenda deleniti.
+//         </p>
+//         <button className="toggle">
+//           whta is the return
+//           <FontAwesomeIcon icon="fas fa-plus" />
+//         </button>
+//         <p>
+//           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error quod
+//           pariatur facere quisquam voluptates tempore, dignissimos commodi!
+//           Voluptates architecto corporis nostrum laudantium. Voluptatum
+//           inventore quasi porro possimus necessitatibus assumenda deleniti.
+//         </p>
+//         <button className="toggle">
+//           whta is the return
+//           <FontAwesomeIcon icon="fas fa-plus" />
+//         </button>
+//       </div>
+//     </div>
+//   );
+// };
